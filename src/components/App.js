@@ -1,21 +1,20 @@
+import React, { useState } from "react";
+import "./../styles/App.css";
 import Child from "./Child";
-import React,{useState} from "react";
-import './../styles/App.css';
-
 const App = () => {
-  const [selected,setSelected]=useState("");
-  function clickHandler(num){
-    setSelected(num);
+  const [selectedOption, setSelectedOption] = useState("");
+  function clickHandler(num) {
+    setSelectedOption(num);
   }
   return (
     <div>
       <h1>Parent Component</h1>
-      <Child handler={clickHandler} num={1}/>
-      <Child handler={clickHandler} num={2}/>
-    <p> Selected Option: Option {selected}</p>
-        {/* Do not remove the main div */}
+      <Child handler={clickHandler} num={1} />
+      <Child handler={clickHandler} num={2} />
+      <p> Selected Option: Option {selectedOption}</p>
+      {/* Do not remove the main div */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
