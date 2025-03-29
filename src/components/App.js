@@ -10,7 +10,6 @@ const App = () => {
   return (
     <div>
       <h1>Parent Component</h1>
-      <h3>Child Component</h3>
       <Child handler={clickHandler} num={1}/>
       <Child handler={clickHandler} num={2}/>
     <p> Selected Option: Option {selected}</p>
