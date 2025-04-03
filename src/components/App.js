@@ -7,7 +7,7 @@ const App = () => {
     setSelectedOption(num);
   }
   return (
-    <div>
+    <div className="parent">
       <h1>Parent Component</h1>
       <Child handler={clickHandler} num={1} />
       <Child handler={clickHandler} num={2} />
